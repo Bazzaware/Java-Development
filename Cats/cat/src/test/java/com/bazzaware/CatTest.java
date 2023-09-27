@@ -9,9 +9,25 @@ public class CatTest {
         Cat cat = new Cat("Kitty", 2, 5);
 
         // act
-        cat.eat();
+        for (int i = 0; i < 2; i++) {
+            cat.eat();
+        }
 
         // assert
-        assert cat.getWeight() == 6;
+        assert cat.getWeight() == 7;
+    }
+
+    @Test
+    public void ShouldSubtractOneWithWalk() {
+        // arrange
+        Cat cat = new Cat("Kitty", 2, 5);
+
+        // act
+        for (int i = 0; i < 4; i++) {
+            cat.walk();
+        }
+
+        // assert
+        assert cat.getWeight() == 1;
     }
 }
