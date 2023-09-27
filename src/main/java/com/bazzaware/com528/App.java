@@ -20,4 +20,13 @@ public class App {
             System.out.println(student.ToString());
         }
     }
+
+    public Double ConvertStringToDouble(String mark) {
+        try {
+            Double number = Double.parseDouble(mark);
+            return number;
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Mark must be a number");
+        }
+    }
 }

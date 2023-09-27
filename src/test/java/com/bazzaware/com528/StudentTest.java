@@ -66,4 +66,35 @@ public class StudentTest {
         // assert
         assert (result).equals(expectedResult);
     }
+
+    @Test
+    public void ShouldReturnADoubleFromAString() {
+        // arrange
+        Double expectedResult = 1.0;
+        String mark = "1.0";
+        App app = new App();
+        // act
+        Double result = app.ConvertStringToDouble(mark);
+
+        // assert
+        assert result.equals(expectedResult);
+    }
+
+    @Test
+    public void ShouldThrowErrorIfNotADouble() {
+        // arrange
+        String expectedResult = "Mark must be a number";
+        String mark = "a";
+        String result = "";
+        App app = new App();
+        // act
+        try {
+            app.ConvertStringToDouble(mark);
+        } catch (IllegalArgumentException e) {
+            // assert
+            result = e.getMessage();
+        }
+        assert (result).equals(expectedResult);
+    }
+
 }
