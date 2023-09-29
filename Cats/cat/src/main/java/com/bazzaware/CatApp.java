@@ -1,10 +1,13 @@
 package com.bazzaware;
 
-public class CatApp {
+import com.bazzaware.helper.HelperApp;
+
+public class CatApp extends HelperApp {
+
     public static void main(String[] args) {
         Cat cat01 = new Cat("FlatHead", 7, 10);
         Cat cat02 = new Cat("Cupra", 2, 7);
-
+        clearConsole();
         for (int i = 0; i < 2; i++) {
             cat01.eat();
         }
