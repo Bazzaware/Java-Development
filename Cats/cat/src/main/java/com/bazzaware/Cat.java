@@ -12,8 +12,14 @@ public class Cat {
         _weight = Weight;
     }
 
-    public void walk() {
-        _weight--;
+    public void walk(int distance) {
+        for (int i = 0; i < distance; i++) {
+            if ((_weight--) <= 5) {
+                throw new RuntimeException("Can't walk any further... poor cat will be starved!");
+            } else {
+                _weight--;
+            }
+        }
     }
 
     public void display() {
