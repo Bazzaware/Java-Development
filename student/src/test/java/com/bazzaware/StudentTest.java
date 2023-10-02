@@ -72,7 +72,7 @@ public class StudentTest {
         // arrange
         Double expectedResult = 1.0;
         String mark = "1.0";
-        App app = new App();
+        StudentApp app = new StudentApp();
         // act
         Double result = app.ConvertStringToDouble(mark);
 
@@ -86,7 +86,7 @@ public class StudentTest {
         String expectedResult = "Mark must be a number";
         String mark = "a";
         String result = "";
-        App app = new App();
+        StudentApp app = new StudentApp();
         // act
         try {
             app.ConvertStringToDouble(mark);
