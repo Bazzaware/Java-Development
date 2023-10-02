@@ -1,4 +1,4 @@
-package com.bazzaware.com528;
+package com.bazzaware;
 
 public class Student {
 
