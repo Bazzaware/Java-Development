@@ -11,8 +11,9 @@ public class StudentApp {
         for (int i = 0; i < 5; i++) {
             String firstName = "John" + i;
             String lastName = "Doe" + i;
+            String course = "BDATS";
             Double mark = 1.0 + i;
-            Student student = new Student(firstName, lastName, mark);
+            Student student = new Student(firstName, lastName, course, mark);
             students.add(student);
         }
 
