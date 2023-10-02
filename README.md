@@ -1,7 +1,5 @@
 # JAVA Development Projects
 
-[[toc]]
-
 ## Repo for testing out JAVA development using Visual Code as the IDE
 
 
