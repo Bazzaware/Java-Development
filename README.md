@@ -6,3 +6,4 @@
 ## Useful links
 
 * [Introduction to POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+* [JUNIT Fixtures](https://junit.org/junit4/cookbook.html)
