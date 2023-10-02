@@ -14,7 +14,21 @@
             "type": "java",
             "name": "App",
             "request": "launch",
-            "mainClass": "com.bazzaware.com528.App",
+            "mainClass": "com.bazzaware.App",
+            "projectName": "cats"
+        },
+        {
+            "type": "java",
+            "name": "CatApp",
+            "request": "launch",
+            "mainClass": "com.bazzaware.CatApp",
+            "projectName": "cats"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "com.bazzaware.StudentApp",
             "projectName": "student"
         }
     ]
