@@ -11,7 +11,7 @@ public class CatApp extends HelperApp {
         cat01.display();
         cat02.display();
         for (int i = 0; i < 2; i++) {
-            cat01.eat();
+            cat01.eat(1);
         }
         cat01.display();
         cat02.display();

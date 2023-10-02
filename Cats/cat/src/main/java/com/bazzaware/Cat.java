@@ -12,9 +12,10 @@ public class Cat {
         _weight = Weight;
     }
 
-    public void walk(int distance) {
-        for (int i = 0; i < distance; i++) {
-            if ((_weight--) <= 5) {
+    public void walk(int distanceToWalk) {
+        for (int i = 0; i < distanceToWalk; i++) {
+            int weightCheck = _weight;
+            if (weightCheck <= 5) {
                 throw new RuntimeException("Can't walk any further... poor cat will be starved!");
             } else {
                 _weight--;
@@ -26,8 +27,8 @@ public class Cat {
         System.out.println("Name: " + _name + " Age: " + _age + " Weight: " + _weight);
     }
 
-    public void eat() {
-        _weight++;
+    public void eat(int amountToEat) {
+        _weight += amountToEat;
     }
 
     public int getWeight() {

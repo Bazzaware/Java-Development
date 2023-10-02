@@ -10,7 +10,7 @@ public class CatTest {
 
         // act
         for (int i = 0; i < 2; i++) {
-            cat.eat();
+            cat.eat(1);
         }
 
         // assert
@@ -35,7 +35,7 @@ public class CatTest {
         Cat cat = new Cat("Kitty", 2, 10);
 
         // act
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             cat.walk(1);
         }
 
