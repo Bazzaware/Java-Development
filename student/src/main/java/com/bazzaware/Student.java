@@ -1,10 +1,13 @@
 package com.bazzaware;
 
+import java.util.UUID;
+
 public class Student {
 
     private String _lastName;
     private String _firstName;
     private Double _mark;
+    private String _id;
 
     public Student(String FirstName, String LastName, Double Mark) {
         _firstName = FirstName;
@@ -13,6 +16,7 @@ public class Student {
             throw new IllegalArgumentException("Mark must be between 1 and 100");
         }
         _mark = Mark;
+        _id = UUID.randomUUID().toString();
     }
 
     public String GetName() {
@@ -25,6 +29,10 @@ public class Student {
         String mark = _mark.toString();
         String result = "Name: " + name + " Mark: " + mark;
         return result;
+    }
+
+    public String GetId() {
+        return _id;
     }
 
 }

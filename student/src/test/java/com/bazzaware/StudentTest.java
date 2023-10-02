@@ -1,5 +1,7 @@
 package com.bazzaware;
 
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Test;
 
 public class StudentTest {
@@ -97,4 +99,14 @@ public class StudentTest {
         assert (result).equals(expectedResult);
     }
 
+    @Test
+    public void ShouldGenerateGuid() {
+        // arrange
+
+        // act
+        String result = (new Student("John", "Doe", 10.0)).GetId();
+
+        // assert
+        assertNotNull(result);
+    }
 }
