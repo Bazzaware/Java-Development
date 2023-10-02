@@ -16,5 +16,4 @@ public class CatApp extends HelperApp {
         cat01.display();
         cat02.display();
     }
-
 }
