@@ -9,8 +9,8 @@
     <description>Parent Project</description>
     <packaging>pom</packaging>
     <modules>
-        <module>cats</module>
-        <module>student</module>
+        <module>../cats</module>
+        <module>../student</module>
     </modules>
     <version>1.0-SNAPSHOT</version>
 
