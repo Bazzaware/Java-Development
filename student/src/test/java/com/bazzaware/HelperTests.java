@@ -1,5 +1,6 @@
 package com.bazzaware;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -7,21 +8,20 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 
+public class HelperTests extends Fixtures {
 
-public class HelperTests {
-    
     @Test
-    public void ShouldPass(){
-        InputStream stdin = System.in;
-        System.setIn(new ByteArrayInputStream("3\n4\n".getBytes()));
+    public void ShouldPassGetStudentDetails() {
+        // arrange
+        String expectedResult = "Name: John Doe\nCourse: BDATS" + "\nMark: 1.0";
+        StudentApp studentApp = new StudentApp();
+        Student student = studentApp.createStudent();
 
-        ByteArrayOutputStream ByteArrayOutputStream = new ByteArrayOutputStream;
-        PrintStream printStream = new PrintStream(ByteArrayOutputStream);
-        PrintStream stdOut = System.out;
-        System.setOut(printStream);
+        // act
+        String result = student.ToString();
 
-
+        // assert
+        assert (result).equals(expectedResult);
     }
-
 
 }

@@ -5,17 +5,7 @@ import static org.junit.Assert.assertNotNull;
 import org.junit.Before;
 import org.junit.Test;
 
-public class StudentTest {
-    Double mark = 1.0;
-    Student student;
-    String firstName = "John";
-    String lastName = "Doe";
-    String course = "BDATS";
-
-    @Before
-    public void setUp() {
-        student = new Student(firstName, lastName, course, mark);
-    }
+public class StudentTest extends Fixtures {
 
     @Test
     public void ShouldReturnFullName() {

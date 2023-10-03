@@ -30,4 +30,14 @@ public class StudentApp {
             throw new IllegalArgumentException("Mark must be a number");
         }
     }
+
+    public Student createStudent() {
+        Double mark = 1.0;
+        Student student;
+        String firstName = "John";
+        String lastName = "Doe";
+        String course = "BDATS";
+        student = new Student(firstName, lastName, course, mark);
+        return student;
+    }
 }
