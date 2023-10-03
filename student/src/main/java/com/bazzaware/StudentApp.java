@@ -1,10 +1,12 @@
 package com.bazzaware;
 
 import java.util.List;
-
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public class StudentApp {
+    private Scanner scanner;
+
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
 
@@ -32,12 +34,13 @@ public class StudentApp {
     }
 
     public Student createStudent() {
-        Double mark = 1.0;
-        Student student;
-        String firstName = "John";
+        System.out.println("Enter first name");
+        String firstName = scanner.nextLine();
         String lastName = "Doe";
         String course = "BDATS";
-        student = new Student(firstName, lastName, course, mark);
+        Double mark = 1.0;
+
+        Student student = new Student(firstName, lastName, course, mark);
         return student;
     }
 }

@@ -15,9 +15,9 @@ public class UserInputExample {
 
     public void start() {
         printStream.println("Enter number 1");
-        int x = scanner.nextInt();
+        int x = Integer.parseInt(scanner.nextLine());
         printStream.println("Enter number 2");
-        int y = scanner.nextInt();
+        int y = Integer.parseInt(scanner.nextLine());
         printStream.println("output: " + (x + y));
     }
 
