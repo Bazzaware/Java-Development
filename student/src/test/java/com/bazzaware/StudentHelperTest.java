@@ -30,4 +30,16 @@ public class StudentHelperTest {
         // assert
         assertFalse(result);
     }
+
+    @Test
+    public void ShouldReturnTrueIfBetweenOneAndOneHundred() {
+        // arrange
+        StudentHelper studentHelper = new StudentHelper();
+
+        // act
+        boolean result = studentHelper.setMark(1.0);
+
+        // assert
+        assertTrue(result);
+    }
 }
