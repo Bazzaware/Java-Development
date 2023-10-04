@@ -73,4 +73,5 @@ public class StudentTest extends Fixtures {
         // assert
         assertNotNull(result);
     }
+
 }
