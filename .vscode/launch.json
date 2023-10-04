@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UserInputExample",
+            "request": "launch",
+            "mainClass": "com.bazzaware.UserInputExample",
+            "projectName": "test-input"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
