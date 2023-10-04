@@ -8,9 +8,9 @@ public class Fixtures {
     public String firstName = "John";
     public String lastName = "Doe";
     public String course = "BDATS";
-    private float _minMark = 1;
-    private float _maxMark = 100;
-    public float[][] markData = { { _minMark }, { _maxMark } };
+    private Double _minMark = 1.0;
+    private Double _maxMark = 100.0;
+    public Double[][] markData = { { _minMark }, { _maxMark } };
 
     @Before
     public void setUp() {
