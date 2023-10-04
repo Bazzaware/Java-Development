@@ -10,14 +10,11 @@ public class Student {
     private Double _mark;
     private String _id;
 
-    public Student(String firstName, String lastName, String course, Double mark) {
+    public Student(String firstName, String lastName, String course) {
         _firstName = firstName;
         _lastName = lastName;
         _course = course;
-        if (mark < 1 || mark > 100) {
-            throw new IllegalArgumentException("Mark must be between 1 and 100");
-        }
-        _mark = mark;
+        _mark = 0.0;
         _id = UUID.randomUUID().toString();
     }
 
@@ -26,7 +23,7 @@ public class Student {
         return name;
     }
 
-    public String ToString() {
+    public String toString() {
         String name = _firstName + " " + _lastName;
         String mark = _mark.toString();
         String result = "Name: " + name + "\nCourse: " + _course + "\nMark: " + mark;

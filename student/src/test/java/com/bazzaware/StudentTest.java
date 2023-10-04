@@ -27,7 +27,7 @@ public class StudentTest extends Fixtures {
         String result = "";
         // act
         try {
-            Student student = new Student(firstName, lastName, course, mark);
+            Student student = new Student(firstName, lastName, course);
         } catch (IllegalArgumentException e) {
             // assert
             result = e.getMessage();
@@ -43,7 +43,7 @@ public class StudentTest extends Fixtures {
         String result = "";
         // act
         try {
-            Student student = new Student(firstName, lastName, course, mark);
+            Student student = new Student(firstName, lastName, course);
         } catch (IllegalArgumentException e) {
             // assert
             result = e.getMessage();
@@ -57,7 +57,7 @@ public class StudentTest extends Fixtures {
         String expectedResult = "Name: John Doe\nCourse: BDATS" + "\nMark: 1.0";
 
         // act
-        String result = student.ToString();
+        String result = student.toString();
 
         // assert
         assert (result).equals(expectedResult);
@@ -73,5 +73,4 @@ public class StudentTest extends Fixtures {
         // assert
         assertNotNull(result);
     }
-
 }

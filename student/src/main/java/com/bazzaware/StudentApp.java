@@ -14,13 +14,13 @@ public class StudentApp {
             String firstName = "John" + i;
             String lastName = "Doe" + i;
             String course = "BDATS";
-            Double mark = 1.0 + i;
-            Student student = new Student(firstName, lastName, course, mark);
+            Double mark = 69.0 + i;
+            Student student = new Student(firstName, lastName, course);
             students.add(student);
         }
 
         for (Student student : students) {
-            System.out.println(student.ToString());
+            System.out.println(student);
         }
     }
 
@@ -40,7 +40,7 @@ public class StudentApp {
         String course = "BDATS";
         Double mark = 1.0;
 
-        Student student = new Student(firstName, lastName, course, mark);
+        Student student = new Student(firstName, lastName, course);
         return student;
     }
 }

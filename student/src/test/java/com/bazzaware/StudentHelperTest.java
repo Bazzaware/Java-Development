@@ -1,13 +1,15 @@
 package com.bazzaware;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.runners.Parameterized.Parameter;
 
 public class StudentHelperTest {
     @Test
-    public void ShouldRetunFalseIfLessThanOne() {
+    public void ShouldReturnFalseIfLessThanOne() {
         // arrange
         StudentHelper studentHelper = new StudentHelper();
 
@@ -31,7 +33,6 @@ public class StudentHelperTest {
         assertFalse(result);
     }
 
-    @Test
     public void ShouldReturnTrueIfBetweenOneAndOneHundred() {
         // arrange
         StudentHelper studentHelper = new StudentHelper();
@@ -41,5 +42,29 @@ public class StudentHelperTest {
 
         // assert
         assertTrue(result);
+    }
+
+    @Test
+    public void ShouldReturnGradeFirst() {
+        // arrange
+        StudentHelper studentHelper = new StudentHelper();
+
+        // act
+        String result = studentHelper.getGrade(70);
+
+        // assert
+        assertEquals("First", result);
+    }
+
+    @Test
+    public void ShouldReturnGradeTwoOne() {
+        // arrange
+        StudentHelper studentHelper = new StudentHelper();
+
+        // act
+        String result = studentHelper.getGrade(60);
+
+        // assert
+        assertEquals("Upper Second", result);
     }
 }

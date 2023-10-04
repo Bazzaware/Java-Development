@@ -31,7 +31,7 @@ public class HelperTests extends Fixtures {
         System.setIn(stdIn);
         System.setOut(stdout);
 
-        String result = student.ToString();
+        String result = student.toString();
 
         // assert
         assert (result).equals(expectedResult);
