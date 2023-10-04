@@ -30,6 +30,13 @@
             "request": "launch",
             "mainClass": "com.bazzaware.StudentApp",
             "projectName": "student"
+        },
+        {
+            "type": "java",
+            "name": "Test-Input",
+            "request": "launch",
+            "mainClass": "com.bazzaware.UserInputExample",
+            "projectName": "test-input"
         }
     ]
 }
