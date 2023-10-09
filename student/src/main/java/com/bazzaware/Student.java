@@ -1,24 +1,12 @@
 package com.bazzaware;
 
-import java.util.UUID;
-
-public class Student {
-
-    private String _lastName;
-    private String _firstName;
-    private String _course;
-    private Double _mark;
-    private String _id;
+public class Student extends StudentHelper {
 
     public Student(String firstName, String lastName, String course) {
-        _firstName = firstName;
-        _lastName = lastName;
-        _course = course;
-        _mark = 0.0;
-        _id = UUID.randomUUID().toString();
+        super(firstName, lastName, course);
     }
 
-    public String GetName() {
+    public String getName() {
         String name = _firstName + " " + _lastName;
         return name;
     }

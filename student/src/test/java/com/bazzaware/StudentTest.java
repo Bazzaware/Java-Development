@@ -12,7 +12,7 @@ public class StudentTest extends Fixtures {
         String expectedResult = "John Doe";
 
         // act
-        String result = student.GetName();
+        String result = student.getName();
 
         // assert
         assert (result).equals(expectedResult);

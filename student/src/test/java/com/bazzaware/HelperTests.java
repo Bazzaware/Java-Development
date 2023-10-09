@@ -27,7 +27,7 @@ public class HelperTests extends Fixtures {
 
         // act
         System.setOut(printStream);
-        Student student = studentApp.createStudent();
+        // Student student = studentApp.createStudent();
         System.setIn(stdIn);
         System.setOut(stdout);
 
