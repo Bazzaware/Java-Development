@@ -33,10 +33,33 @@
         },
         {
             "type": "java",
-            "name": "Student",
+            "name": "StudentApp",
             "request": "launch",
             "mainClass": "com.bazzaware.StudentApp",
             "projectName": "student"
+        },
+        {
+            "type": "java",
+            "name": "StudentApp Auto",
+            "request": "launch",
+            "mainClass": "com.bazzaware.StudentApp",
+            "projectName": "student",
+            "args": "-auto"
+        },
+        {
+            "type": "java",
+            "name": "Test-Input",
+            "request": "launch",
+            "mainClass": "com.bazzaware.UserInputExample",
+            "projectName": "test-input"
+        },
+        {
+            "type": "java",
+            "name": "Test-Input with args",
+            "request": "launch",
+            "mainClass": "com.bazzaware.UserInputExample",
+            "projectName": "test-input",
+            "args": "-auto"
         }
     ]
 }
