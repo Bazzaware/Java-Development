@@ -95,8 +95,8 @@ public class StudentHelper {
         return grade;
     }
 
-    public boolean didPass(double mark) {
-        if (mark >= 40) {
+    public boolean didPass() {
+        if (_mark >= 40) {
             return true;
         } else {
             return false;

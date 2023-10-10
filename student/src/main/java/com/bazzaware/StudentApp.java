@@ -32,12 +32,11 @@ public class StudentApp extends StudentHelper {
         System.out.println("=============\nPrint Details\n=============");
         printStudentDetails(students);
         System.out.println("=====================\nPrint Name and Course\n=====================");
-        for (
-
-        Student student : students) {
+        for (Student student : students) {
             System.out.println("=============\n" + //
                     "Name: " + student.getName());
             System.out.println("Grade: " + student.getGrade());
+            System.out.println("Pass: " + student.didPass());
         }
     }
 
