@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class StudentApp extends StudentHelper {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        List<Double> allMarks = Arrays.asList(39.0, 40.0, 50.0, 60.0, 70.0);
+        List<String> allMarks = Arrays.asList("39.0", "40.0", "50.0", "60.0", "70.0");
         boolean test = false;
         clearConsole();
         if ((args != null) && (args.length > 0)) {
@@ -44,15 +44,6 @@ public class StudentApp extends StudentHelper {
     private static void printStudentDetails(List<Student> students) {
         for (Student student : students) {
             System.out.println("-----------------\n" + student + "\n-----------------");
-        }
-    }
-
-    public Double ConvertStringToDouble(String mark) {
-        try {
-            Double number = Double.parseDouble(mark);
-            return number;
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Mark must be a number");
         }
     }
 }

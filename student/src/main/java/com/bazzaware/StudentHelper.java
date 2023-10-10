@@ -23,11 +23,11 @@ public class StudentHelper {
     public StudentHelper() {
     }
 
-    public final static void clearConsole() {
+    public static void clearConsole() {
         String[] cls = new String[] { "cmd.exe", "/c", "cls" };
         String[] clear = new String[] { "clear" };
         try {
-            final String os = System.getProperty("os.name");
+            String os = System.getProperty("os.name");
             if (os.contains("Windows")) {
                 Runtime.getRuntime().exec(cls);
             } else {
@@ -39,6 +39,15 @@ public class StudentHelper {
         }
     }
 
+    public boolean ConvertStringToDouble(String mark) {
+        try {
+            Double number = Double.parseDouble(mark);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
     public static Student createStudent() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first name");
@@ -47,17 +56,25 @@ public class StudentHelper {
         String lastName = scanner.nextLine();
         System.out.println("Enter course name");
         String course = scanner.nextLine();
-
         Student student = new Student(firstName, lastName, course);
+        String mark = "";
+        do {
+            System.out.println("Enter mark: ");
+            mark = scanner.nextLine();
+        } while (student.setMark(mark) == false);
         return student;
     }
 
-    public boolean setMark(double mark) {
+    public boolean setMark(String mark) {
         boolean result = false;
-
-        if (mark >= _minMark && mark <= _maxMark) {
-            _mark = mark;
-            result = true;
+        if (ConvertStringToDouble(mark)) {
+            Double enteredMark = Double.parseDouble(mark);
+            if (enteredMark >= _minMark && enteredMark <= _maxMark) {
+                _mark = enteredMark;
+                result = true;
+            }
+        } else {
+            System.out.println("Invalid mark, please enter a number between 1 and 100");
         }
         return result;
     }
@@ -78,7 +95,7 @@ public class StudentHelper {
         return grade;
     }
 
-    public boolean didPass(float mark) {
+    public boolean didPass(double mark) {
         if (mark >= 40) {
             return true;
         } else {

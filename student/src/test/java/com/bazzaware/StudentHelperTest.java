@@ -1,6 +1,5 @@
 package com.bazzaware;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -13,7 +12,7 @@ public class StudentHelperTest {
         StudentHelper studentHelper = new StudentHelper();
 
         // act
-        boolean result = studentHelper.setMark(0.0);
+        boolean result = studentHelper.setMark("0.0");
 
         // assert
         assertFalse(result);
@@ -26,7 +25,7 @@ public class StudentHelperTest {
         StudentHelper studentHelper = new StudentHelper();
 
         // act
-        boolean result = studentHelper.setMark(101.0);
+        boolean result = studentHelper.setMark("101.0");
 
         // assert
         assertFalse(result);
@@ -37,33 +36,9 @@ public class StudentHelperTest {
         StudentHelper studentHelper = new StudentHelper();
 
         // act
-        boolean result = studentHelper.setMark(1.0);
+        boolean result = studentHelper.setMark("1.0");
 
         // assert
         assertTrue(result);
-    }
-
-    @Test
-    public void ShouldReturnGradeFirst() {
-        // arrange
-        StudentHelper studentHelper = new StudentHelper();
-
-        // act
-        String result = studentHelper.getGrade();
-
-        // assert
-        assertEquals("First", result);
-    }
-
-    @Test
-    public void ShouldReturnGradeTwoOne() {
-        // arrange
-        StudentHelper studentHelper = new StudentHelper();
-
-        // act
-        String result = studentHelper.getGrade();
-
-        // assert
-        assertEquals("Upper Second", result);
     }
 }

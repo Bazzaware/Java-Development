@@ -21,4 +21,8 @@ public class Student extends StudentHelper {
     public String GetId() {
         return _id;
     }
+
+    public double getMark() {
+        return _mark;
+    }
 }
