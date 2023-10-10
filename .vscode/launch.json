@@ -26,6 +26,13 @@
         },
         {
             "type": "java",
+            "name": "Student01",
+            "request": "launch",
+            "mainClass": "com.bazzaware.App",
+            "projectName": "week01"
+        },
+        {
+            "type": "java",
             "name": "CatApp",
             "request": "launch",
             "mainClass": "com.bazzaware.CatApp",
