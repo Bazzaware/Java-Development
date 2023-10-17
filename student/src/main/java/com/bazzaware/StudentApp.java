@@ -20,7 +20,7 @@ public class StudentApp extends StudentHelper {
                 String firstName = "John" + i;
                 String lastName = "Doe" + i;
                 String course = "BDATS";
-                Student student = new Student(firstName, lastName, course);
+                Student student = new Undergraduate(firstName, lastName, course);
                 student.setMark(allMarks.get(i));
                 students.add(student);
             } else {
@@ -55,7 +55,7 @@ public class StudentApp extends StudentHelper {
         String lastName = scanner.nextLine();
         System.out.println("Enter course name");
         String course = scanner.nextLine();
-        Student student = new Student(firstName, lastName, course);
+        Student student = new Undergraduate(firstName, lastName, course);
         String mark = "";
         do {
             System.out.println("Enter mark: ");
