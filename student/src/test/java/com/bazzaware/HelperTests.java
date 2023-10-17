@@ -1,17 +1,16 @@
 package com.bazzaware;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
 public class HelperTests extends Fixtures {
 
-    @Ignore
+    @Disabled("Not implemented yet")
     @Test
     public void ShouldPassGetStudentDetails() {
         // arrange
