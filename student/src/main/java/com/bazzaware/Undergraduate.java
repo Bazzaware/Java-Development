@@ -4,7 +4,6 @@ public class Undergraduate extends Student {
 
     public Undergraduate(String firstName, String lastName, String course) {
         super(firstName, lastName, course);
-        // TODO Auto-generated constructor stub
     }
 
     @Override

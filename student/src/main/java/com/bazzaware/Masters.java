@@ -4,7 +4,6 @@ public class Masters extends Student {
 
     public Masters(String firstName, String lastName, String course) {
         super(firstName, lastName, course);
-        // TODO Auto-generated constructor stub
     }
 
     @Override
