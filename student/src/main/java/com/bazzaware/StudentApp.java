@@ -1,6 +1,7 @@
 package com.bazzaware;
 
 import java.util.List;
+import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -45,4 +46,22 @@ public class StudentApp extends StudentHelper {
             System.out.println("-----------------\n" + student + "\n-----------------");
         }
     }
+
+    public static Student createStudent() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter first name");
+        String firstName = scanner.nextLine();
+        System.out.println("Enter last name");
+        String lastName = scanner.nextLine();
+        System.out.println("Enter course name");
+        String course = scanner.nextLine();
+        Student student = new Student(firstName, lastName, course);
+        String mark = "";
+        do {
+            System.out.println("Enter mark: ");
+            mark = scanner.nextLine();
+        } while (student.setMark(mark) == false);
+        return student;
+    }
+
 }

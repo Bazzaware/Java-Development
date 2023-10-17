@@ -7,7 +7,7 @@ public class StudentAppTest {
     public void ShouldReturnADoubleFromAString() {
         // arrange
         String mark = "1.0";
-        StudentApp app = new StudentApp();
+        StudentHelper app = new StudentHelper();
         // act
         Boolean result = app.ConvertStringToDouble(mark);
 
