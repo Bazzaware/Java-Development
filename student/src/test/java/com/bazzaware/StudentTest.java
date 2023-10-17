@@ -30,6 +30,7 @@ public class StudentTest extends Fixtures {
         // assert
         assertNotNull(result);
     }
+
     @Test
     public void ShouldReturnFalseIfLessThanOne() {
         // arrange
@@ -53,6 +54,7 @@ public class StudentTest extends Fixtures {
         assertFalse(result);
     }
 
+    @Test
     public void ShouldReturnTrueIfBetweenOneAndOneHundred() {
         // arrange
 
@@ -63,5 +65,16 @@ public class StudentTest extends Fixtures {
         assertTrue(result);
     }
 
+    @Test
+    public void ShouldReturnFirstIfSeventyOrMore() {
+        // arrange
+        String expectedResult = "First";
 
+        // act
+        student.setMark("70.0");
+        String result = student.getGrade();
+
+        // assert
+        assert (result).equals(expectedResult);
+    }
 }
