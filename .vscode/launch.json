@@ -40,6 +40,13 @@
         },
         {
             "type": "java",
+            "name": "UniversityApp",
+            "request": "launch",
+            "mainClass": "com.bazzaware.UniversityApp",
+            "projectName": "university"
+        },
+        {
+            "type": "java",
             "name": "StudentApp",
             "request": "launch",
             "mainClass": "com.bazzaware.StudentApp",
