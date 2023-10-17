@@ -77,4 +77,56 @@ public class StudentTest extends Fixtures {
         // assert
         assert (result).equals(expectedResult);
     }
+
+    @Test
+    public void ShouldReturnTwoOne() {
+        // arrange
+        String expectedResult = "2/1";
+
+        // act
+        student.setMark("60.0");
+        String result = student.getGrade();
+
+        // assert
+        assert (result).equals(expectedResult);
+    }
+
+    @Test
+    public void ShouldReturnTwoTwo() {
+        // arrange
+        String expectedResult = "2/2";
+
+        // act
+        student.setMark("50.0");
+        String result = student.getGrade();
+
+        // assert
+        assert (result).equals(expectedResult);
+    }
+
+    @Test
+    public void ShouldReturnThird() {
+        // arrange
+        String expectedResult = "Third";
+
+        // act
+        student.setMark("40.0");
+        String result = student.getGrade();
+
+        // assert
+        assert (result).equals(expectedResult);
+    }
+
+    @Test
+    public void ShouldReturnFail() {
+        // arrange
+        String expectedResult = "Fail";
+
+        // act
+        student.setMark("39.0");
+        String result = student.getGrade();
+
+        // assert
+        assert (result).equals(expectedResult);
+    }
 }
