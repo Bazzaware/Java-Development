@@ -1,6 +1,6 @@
 package com.bazzaware;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 
 public class Fixtures {
     public Double mark = 1.0;
@@ -12,7 +12,7 @@ public class Fixtures {
     private Double _maxMark = 100.0;
     public Double[][] markData = { { _minMark }, { _maxMark } };
 
-    @Before
+    @BeforeEach
     public void setUp() {
         student = new Student(firstName, lastName, course);
     }
