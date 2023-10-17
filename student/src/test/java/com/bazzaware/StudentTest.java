@@ -3,8 +3,9 @@ package com.bazzaware;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class StudentTest extends Fixtures {
 
@@ -65,68 +66,18 @@ public class StudentTest extends Fixtures {
         assertTrue(result);
     }
 
-    @Test
-    public void ShouldReturnFirstIfSeventyOrMore() {
+    @ParameterizedTest
+    @CsvSource({ "70.0, First", "60.0, 2/1", "50.0, 2/2", "40.0, Third", "39.0, Fail" })
+    public void ShouldReturnCorrectGrade(String mark, String expectedGrade) {
         // arrange
-        String expectedResult = "First";
+        String result = "";
+        Student student = new Student(firstName, lastName, course);
 
         // act
-        student.setMark("70.0");
-        String result = student.getGrade();
+        student.setMark(mark);
+        result = student.getGrade();
 
         // assert
-        assert (result).equals(expectedResult);
-    }
-
-    @Test
-    public void ShouldReturnTwoOne() {
-        // arrange
-        String expectedResult = "2/1";
-
-        // act
-        student.setMark("60.0");
-        String result = student.getGrade();
-
-        // assert
-        assert (result).equals(expectedResult);
-    }
-
-    @Test
-    public void ShouldReturnTwoTwo() {
-        // arrange
-        String expectedResult = "2/2";
-
-        // act
-        student.setMark("50.0");
-        String result = student.getGrade();
-
-        // assert
-        assert (result).equals(expectedResult);
-    }
-
-    @Test
-    public void ShouldReturnThird() {
-        // arrange
-        String expectedResult = "Third";
-
-        // act
-        student.setMark("40.0");
-        String result = student.getGrade();
-
-        // assert
-        assert (result).equals(expectedResult);
-    }
-
-    @Test
-    public void ShouldReturnFail() {
-        // arrange
-        String expectedResult = "Fail";
-
-        // act
-        student.setMark("39.0");
-        String result = student.getGrade();
-
-        // assert
-        assert (result).equals(expectedResult);
+        assert (result).equals(expectedGrade);
     }
 }
