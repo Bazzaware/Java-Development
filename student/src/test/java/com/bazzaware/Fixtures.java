@@ -14,6 +14,6 @@ public class Fixtures {
 
     @BeforeEach
     public void setUp() {
-        student = new Student(firstName, lastName, course);
+        student = new Undergraduate(firstName, lastName, course);
     }
 }
