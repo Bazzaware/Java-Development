@@ -81,4 +81,30 @@ public class StudentTest extends Fixtures {
         // assert
         assert (result).equals(expectedGrade);
     }
+
+    @Test
+    public void ShouldReturnTrueIfGradeIsGreaterThanForty() {
+
+        // arrange
+        Student student = new Student(firstName, lastName, course);
+
+        // act
+        student.setMark("40.0");
+
+        // assert
+        assertTrue(student.didPass());
+    }
+
+    @Test
+    public void ShouldReturnFalseIfGradeIsLessThanForty() {
+
+        // arrange
+        Student student = new Student(firstName, lastName, course);
+
+        // act
+        student.setMark("39.0");
+
+        // assert
+        assertFalse(student.didPass());
+    }
 }
