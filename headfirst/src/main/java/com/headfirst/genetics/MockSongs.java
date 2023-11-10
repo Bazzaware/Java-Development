@@ -30,7 +30,7 @@ public class MockSongs {
         songs.add(new SongV2("$10", "shakey graves", 120));
         songs.add(new SongV2("havana", "camila cabello", 110));
         songs.add(new SongV2("$10", "shakey graves", 120));
-        songs.add(new SongV2("Cassidy", "grateful dead", 100));
+        songs.add(new SongV2("cassidy", "grateful dead", 100));
         songs.add(new SongV2("50 Ways", "paul simon", 120));
         return songs;}
 }
