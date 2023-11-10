@@ -2,7 +2,9 @@ package com.headfirst.genetics;
 
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Jukebox {
     public void go() {
@@ -17,9 +19,9 @@ public class Jukebox {
         System.out.println("Un ordered list of songs:");
         System.out.println(songList);
 
-        System.out.println("\nOrdered list of songs:");
-        Collections.sort(songList);
-        System.out.println(songList);
+        // System.out.println("\nOrdered list of songs:");
+        // Collections.sort(songList);
+        // System.out.println(songList);
         /*
         * java.util.Collections has a sort method that takes a List as an argument. The
         * List
@@ -54,25 +56,33 @@ public class Jukebox {
         songList.sort((one,two)-> one.getTitle().compareTo(two.getTitle()));
         System.out.println(songList);
 
-        System.out.println("\nSort  descending by title Lambda");
-        songList.sort((one,two)-> two.getTitle().compareTo(one.getTitle()));
-        System.out.println(songList);
+        // System.out.println("\nSort  descending by title Lambda");
+        // songList.sort((one,two)-> two.getTitle().compareTo(one.getTitle()));
+        // System.out.println(songList);
 
-        System.out.println("\nSort by artist Lambda");
-        songList.sort((one,two)-> one.getArtist().compareTo(two.getArtist()));
-        System.out.println(songList);
+        // System.out.println("\nSort by artist Lambda");
+        // songList.sort((one,two)-> one.getArtist().compareTo(two.getArtist()));
+        // System.out.println(songList);
 
-        System.out.println("\nSort descending by artist Lambda");
-        songList.sort((one,two)-> two.getArtist().compareTo(one.getArtist()));
-        System.out.println(songList);
+        // System.out.println("\nSort descending by artist Lambda");
+        // songList.sort((one,two)-> two.getArtist().compareTo(one.getArtist()));
+        // System.out.println(songList);
         
-        System.out.println("\nSort descending by artist Lambda");
-        songList.sort((one,two)-> two.getArtist().compareTo(one.getArtist()));
-        System.out.println(songList);
+        // System.out.println("\nSort descending by artist Lambda");
+        // songList.sort((one,two)-> two.getArtist().compareTo(one.getArtist()));
+        // System.out.println(songList);
 
-        System.out.println("\nSort descending by BPM Lambda");
-        songList.sort((one,two)-> two.getBpm() - one.getBpm());
-        System.out.println(songList);
+        // System.out.println("\nSort descending by BPM Lambda");
+        // songList.sort((one,two)-> two.getBpm() - one.getBpm());
+        // System.out.println(songList);
+
+        /*
+         * Introducing sets to handle duplicated songs. Page 347
+         */
+
+         Set<SongV2> songSet = new HashSet<>(songList);
+         System.out.println("\nSong list from set");
+         System.out.println(songSet);
         
         System.out.println("");
         
