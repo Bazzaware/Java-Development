@@ -5,15 +5,16 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Jukebox {
     public void go() {
         /*
-        * The original code used a List of Strings. We can change the code to use a
-        * List of
-        * SongV2 objects instead. The code that calls this method doesn't need to
-        * change.
-        */
+         * The original code used a List of Strings. We can change the code to use a
+         * List of
+         * SongV2 objects instead. The code that calls this method doesn't need to
+         * change.
+         */
         // List<String> songs = MockSongs.getSongList();
         List<SongV2> songList = MockSongs.getSongsV2();
         System.out.println("Un ordered list of songs:");
@@ -23,40 +24,40 @@ public class Jukebox {
         // Collections.sort(songList);
         // System.out.println(songList);
         /*
-        * java.util.Collections has a sort method that takes a List as an argument. The
-        * List
-        * must contain objects that implement the Comparable interface. The SongV2
-        * class has to
-        * implement Comparable, so we can sort the List of SongV2 objects.
-        * https://devdocs.io/openjdk~17/java.base/java/util/collections#sort(java.util.
-        * List)
-        * public static <T extends Comparable<? super T>> void sort(List<T> list)
-        * public static <T> void sort(List<T> list, Comparator<? super T> c)
-        */
+         * java.util.Collections has a sort method that takes a List as an argument. The
+         * List
+         * must contain objects that implement the Comparable interface. The SongV2
+         * class has to
+         * implement Comparable, so we can sort the List of SongV2 objects.
+         * https://devdocs.io/openjdk~17/java.base/java/util/collections#sort(java.util.
+         * List)
+         * public static <T extends Comparable<? super T>> void sort(List<T> list)
+         * public static <T> void sort(List<T> list, Comparator<? super T> c)
+         */
         /*
-        * Long way to create a sort that implements Comparator<SongV2>
-        */
+         * Long way to create a sort that implements Comparator<SongV2>
+         */
         // ArtistCompare artistCompare = new ArtistCompare(); // New class created for
         // each sort
         // songList.sort(artistCompare);
-        
+
         /*
-        * Shorter way to sort using an inner class
-        */
+         * Shorter way to sort using an inner class
+         */
         // songList.sort(new Comparator<SongV2>() {
-            //     public int compare(SongV2 one, SongV2 two) {
-                //         return one.getArtist().compareTo(two.getArtist());
-                //     }
+        // public int compare(SongV2 one, SongV2 two) {
+        // return one.getArtist().compareTo(two.getArtist());
+        // }
         // });
-        
+
         /*
-        * Welcome to Lambda
-        */
+         * Welcome to Lambda
+         */
         System.out.println("\nSort by title Lambda");
-        songList.sort((one,two)-> one.getTitle().compareTo(two.getTitle()));
+        songList.sort((one, two) -> one.getTitle().compareTo(two.getTitle()));
         System.out.println(songList);
 
-        // System.out.println("\nSort  descending by title Lambda");
+        // System.out.println("\nSort descending by title Lambda");
         // songList.sort((one,two)-> two.getTitle().compareTo(one.getTitle()));
         // System.out.println(songList);
 
@@ -67,7 +68,7 @@ public class Jukebox {
         // System.out.println("\nSort descending by artist Lambda");
         // songList.sort((one,two)-> two.getArtist().compareTo(one.getArtist()));
         // System.out.println(songList);
-        
+
         // System.out.println("\nSort descending by artist Lambda");
         // songList.sort((one,two)-> two.getArtist().compareTo(one.getArtist()));
         // System.out.println(songList);
@@ -80,11 +81,26 @@ public class Jukebox {
          * Introducing sets to handle duplicated songs. Page 347
          */
 
-         Set<SongV2> songSet = new HashSet<>(songList);
-         System.out.println("\nSong list from set");
-         System.out.println(songSet);
-        
+        Set<SongV2> songSet = new HashSet<>(songList);
+        System.out.println("\nSong list from set");
+        System.out.println(songSet);
+
+        /*
+         * Adding a TreeSet
+         * A TreeSet is a Set that is sorted. The TreeSet uses the compareTo method to
+         * sort the objects.
+         */
+        Set<SongV2> songTreeSet = new TreeSet<>(songList);
+        System.out.println("\nSong list from TreeSet");
+        System.out.println(songTreeSet);
+
+        /*
+         * Adding a TreeSet with a Comparator and a lambda
+         */
+        Set<SongV2> songSetBpm = new TreeSet<>(((o1, o2) -> o1.getBpm() - o2.getBpm()));
+        songSetBpm.addAll(songList);
+
         System.out.println("");
-        
+
     }
 }
