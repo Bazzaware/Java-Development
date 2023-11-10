@@ -37,6 +37,37 @@ public class SongV2 implements Comparable<SongV2> {
 
     @Override
     public String toString() {
-        return " " + _title + " " + _artist + " " + _bpm;
+        return _title;
+        // return " " + _title + " " + _artist + " " + _bpm;
+    }
+
+    /* IMPORTANT */
+    /*
+     * *************************************************************************
+     * If you override the equals method, you must override the hashCode method.
+     * *************************************************************************
+     */
+
+    /*
+     * The HashSet (or anyone else calling this method) sends it another song. The
+     * method checks to see if the title of the song it was sent is the same as the
+     * title of the song it was called on. If the titles are the same, the method
+     * returns true. If the titles are different, the method returns false. 
+     */
+    @Override
+    public boolean equals(Object aSong){
+        SongV2 other = (SongV2) aSong;
+        return _title.equals(other.getTitle());
+    }
+
+    /*
+     * This overrides the default hashCode method. The default hashCode method
+     * returns a unique number for each object. We want the hashCode method to
+     * return the same number for two objects that are equal. So we override the
+     * default hashCode method to return the hashCode of the title.
+     */
+    @Override
+    public int hashCode(){
+        return _title.hashCode();
     }
 }
