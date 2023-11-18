@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Jukebox",
+            "request": "launch",
+            "mainClass": "com.headfirst.Main",
+            "projectName": "examples"
+        },
+        {
+            "type": "java",
             "name": "UserInputExample",
             "request": "launch",
             "mainClass": "com.bazzaware.UserInputExample",
