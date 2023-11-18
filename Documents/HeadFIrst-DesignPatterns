@@ -1,0 +1,22 @@
+# Head First in Design Patterns
+
+## Design Principles
+* Identify the aspects of your application that vary and separate them from what stays the same.
+* Program to an interface, not an implementation.
+
+
+```Java
+Public class MallardDuck extends Duck {
+    public MallardDuck(){
+        /*
+        * Still using concrete classes for Quack
+        */
+        quackBehavior = new Quack();
+        flyBehavior = new Quack();
+    }
+
+    public void display(){
+        System.out println("I'm a real Mallard duck");
+    }
+}
+```
