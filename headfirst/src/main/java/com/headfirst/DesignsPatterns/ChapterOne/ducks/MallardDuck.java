@@ -1,5 +1,7 @@
-package com.headfirst.DesignsPatterns.ChapterOne.classes;
+package com.headfirst.DesignsPatterns.ChapterOne.ducks;
 
+import com.headfirst.DesignsPatterns.ChapterOne.classes.FlyWithWings;
+import com.headfirst.DesignsPatterns.ChapterOne.classes.Quack;
 import com.headfirst.DesignsPatterns.ChapterOne.interfaces.IDuck;
 
 public class MallardDuck extends IDuck {
