@@ -1,10 +1,10 @@
-package com.headfirst.DesignsPatterns.ChapterOne;
+package com.headfirst.DesignsPatterns.ChapterOne.interfaces;
 
-public abstract class Duck {
-    FlyBehavior flyBehavior;
-    QuackBehavior quackBehavior;
+public abstract class IDuck {
+    public IFlyBehavior flyBehavior;
+    public IQuackBehavior quackBehavior;
 
-    public Duck() {
+    public IDuck() {
     }
 
     public abstract void display();

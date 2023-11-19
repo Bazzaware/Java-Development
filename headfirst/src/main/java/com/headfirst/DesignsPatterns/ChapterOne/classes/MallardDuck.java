@@ -1,6 +1,8 @@
-package com.headfirst.DesignsPatterns.ChapterOne;
+package com.headfirst.DesignsPatterns.ChapterOne.classes;
 
-public class MallardDuck extends Duck {
+import com.headfirst.DesignsPatterns.ChapterOne.interfaces.IDuck;
+
+public class MallardDuck extends IDuck {
 
     public MallardDuck() {
         quackBehavior = new Quack();
