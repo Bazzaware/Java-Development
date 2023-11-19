@@ -1,9 +1,8 @@
 package com.headfirst.DesignsPatterns.ChapterOne;
 
-import com.headfirst.DesignsPatterns.ChapterOne.classes.FlyRocketPowered;
-import com.headfirst.DesignsPatterns.ChapterOne.ducks.MallardDuck;
-import com.headfirst.DesignsPatterns.ChapterOne.ducks.ModelDuck;
+import com.headfirst.DesignsPatterns.ChapterOne.classes.*;
 import com.headfirst.DesignsPatterns.ChapterOne.interfaces.IDuck;
+import com.headfirst.DesignsPatterns.ChapterOne.ducks.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,7 +25,9 @@ public class Main {
          * the fly. Pun intended.
          */
         IDuck model = new ModelDuck();
+        model.display();
         model.performFly(); // I can't fly
+        model.performQuack(); // Quack
         /*
          * The model duck wasn't flying, so the client calls setFlyBehavior() to change
          * its
@@ -36,5 +37,30 @@ public class Main {
          */
         model.setFlyBehavior(new FlyRocketPowered());
         model.performFly(); // I'm flying with a rocket!
+        model.performQuack(); // Quack
+
+        /*
+         * The RedheadDuck is a real living duck. It inherits its quack() and fly()
+         * methods.
+         * It sets the flyBehavior at runtime to change its flying behavior.
+         */
+        IDuck redhead = new RedheadDuck();
+        redhead.display(); // I am a Redhead Duck
+        redhead.setFlyBehavior(new FlyWithWings());
+        redhead.setQuackBehavior(new Quack());
+        redhead.performFly();
+        redhead.performQuack();
+
+        /*
+         * The RubberDuck is a rubber duckie. It inherits its quack() and fly() methods.
+         * But it doesn't fly, so it overrides fly() to do nothing. It also overrides
+         * display() to show its rubbery appearance.
+         * It inherits the quack() method, which it changes to squeak().
+         */
+
+        IDuck rubber = new RubberDuck();
+        rubber.display(); // I am a Rubber Duck
+        rubber.performFly(); // I can't fly
+        rubber.performQuack(); // Squeak
     }
 }
