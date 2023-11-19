@@ -74,6 +74,13 @@
             "mainClass": "com.bazzaware.UserInputExample",
             "projectName": "test-input",
             "args": "-auto"
+        },
+        {
+            "type": "java",
+            "name": "Chapter 1 Ducks",
+            "request": "launch",
+            "mainClass": "com.headfirst.DesignsPatterns.ChapterOne.Main",
+            "projectName": "headfirst"
         }
     ]
 }
