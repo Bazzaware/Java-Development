@@ -6,9 +6,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ducks",
+            "request": "launch",
+            "mainClass": "com.headfirst.DesignsPatterns.StrategyPattern.Main",
+            "projectName": "headfirst"
+        },
+        {
+            "type": "java",
             "name": "Starbuzz Coffee",
             "request": "launch",
-            "mainClass": "com.headfirst.DecoratorPatterns.StarbuzzCoffee",
+            "mainClass": "com.headfirst.DesignsPatterns.DecoratorPatterns.StarbuzzCoffee",
             "projectName": "headfirst"
         },
         {
@@ -88,13 +95,6 @@
             "mainClass": "com.bazzaware.UserInputExample",
             "projectName": "test-input",
             "args": "-auto"
-        },
-        {
-            "type": "java",
-            "name": "Chapter 1 Ducks",
-            "request": "launch",
-            "mainClass": "com.headfirst.DesignsPatterns.ChapterOne.Main",
-            "projectName": "headfirst"
         }
     ]
 }
