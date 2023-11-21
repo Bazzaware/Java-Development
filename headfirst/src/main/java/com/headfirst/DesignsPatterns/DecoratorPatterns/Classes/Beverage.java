@@ -8,8 +8,27 @@ public abstract class Beverage {
      */
     public String description = "Unknown Beverage";
 
+    /*
+     * Added size variable to the beverage along with the getter and setter
+     * This will be used to calculate the cost of the beverage
+     */
+
+    public enum Size {
+        TALL, GRANDE, VENTI
+    };
+
+    Size size = Size.TALL;
+
     public String getDescription() {
         return description;
+    }
+
+    public void setSize(Size size) {
+        this.size = size;
+    }
+
+    public Size getSize() {
+        return this.size;
     }
 
     public abstract double cost();
@@ -18,6 +37,6 @@ public abstract class Beverage {
         /*
          * This method will return the description and cost of the beverage
          */
-        return "Description: " + this.getDescription() + "\nCost: " + this.cost() + "\n";
+        return "Description: " + this.getDescription() + "\nCost: " + this.cost() + "\n Size: " + this.size + "\n";
     }
 }
