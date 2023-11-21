@@ -1,7 +1,7 @@
-package com.headfirst.DecoratorPatterns;
+package com.headfirst.DecoratorPatterns.Classes;
 
 public abstract class CondimentDecorator extends Beverage {
-    Beverage beverage;
+    public Beverage beverage;
 
     public abstract String getDescription();
 

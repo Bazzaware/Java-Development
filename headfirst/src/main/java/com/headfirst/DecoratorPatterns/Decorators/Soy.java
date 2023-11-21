@@ -1,4 +1,7 @@
-package com.headfirst.DecoratorPatterns;
+package com.headfirst.DecoratorPatterns.Decorators;
+
+import com.headfirst.DecoratorPatterns.Classes.Beverage;
+import com.headfirst.DecoratorPatterns.Classes.CondimentDecorator;
 
 public class Soy extends CondimentDecorator {
 

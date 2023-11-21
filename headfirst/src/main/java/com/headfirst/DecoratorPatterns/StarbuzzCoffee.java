@@ -1,5 +1,9 @@
 package com.headfirst.DecoratorPatterns;
 
+import com.headfirst.DecoratorPatterns.Classes.Beverage;
+import com.headfirst.DecoratorPatterns.Decorators.*;
+import com.headfirst.DecoratorPatterns.HouseCoffee.*;
+
 public class StarbuzzCoffee {
     public static void main(String args[]) {
         Beverage beverage = new Espresso();

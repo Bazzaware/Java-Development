@@ -1,4 +1,6 @@
-package com.headfirst.DecoratorPatterns;
+package com.headfirst.DecoratorPatterns.HouseCoffee;
+
+import com.headfirst.DecoratorPatterns.Classes.Beverage;
 
 public class Decaf extends Beverage {
 
