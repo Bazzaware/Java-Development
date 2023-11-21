@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Starbuzz Coffee",
+            "request": "launch",
+            "mainClass": "com.headfirst.DecoratorPatterns.StarbuzzCoffee",
+            "projectName": "headfirst"
+        },
+        {
+            "type": "java",
             "name": "Jukebox",
             "request": "launch",
             "mainClass": "com.headfirst.Main",
