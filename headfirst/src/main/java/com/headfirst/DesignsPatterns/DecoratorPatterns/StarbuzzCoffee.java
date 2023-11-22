@@ -28,5 +28,9 @@ public class StarbuzzCoffee {
         beverage3 = new Whip(beverage3);
         System.out.println(beverage3);
 
+        Beverage beverage5 = new HouseBlend();
+        beverage5.setSize(Beverage.Size.GRANDE);
+        beverage5 = new Soy(beverage5);
+        System.out.println(beverage5);
     }
 }
