@@ -1,6 +1,6 @@
-package com.headfirst.DesignsPatterns.ChapterOne.classes;
+package com.headfirst.DesignsPatterns.StrategyPattern.classes;
 
-import com.headfirst.DesignsPatterns.ChapterOne.interfaces.IQuackBehavior;
+import com.headfirst.DesignsPatterns.StrategyPattern.interfaces.IQuackBehavior;
 
 public class MuteQuack implements IQuackBehavior {
 

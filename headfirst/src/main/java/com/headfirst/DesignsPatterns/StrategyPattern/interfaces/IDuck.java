@@ -1,4 +1,4 @@
-package com.headfirst.DesignsPatterns.ChapterOne.interfaces;
+package com.headfirst.DesignsPatterns.StrategyPattern.interfaces;
 
 public abstract class IDuck {
     public IFlyBehavior flyBehavior;

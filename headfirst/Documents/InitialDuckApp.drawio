@@ -1,0 +1,103 @@
+<mxfile host="65bd71144e">
+    <diagram id="nEtxWbMUcnM9QWZgBakY" name="Page-1">
+        <mxGraphModel dx="654" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="66" value="" style="rounded=1;whiteSpace=wrap;html=1;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="37.61" y="55" width="680" height="460.00000000000006" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="IS-A" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.027;entryY=1.259;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="90" target="76" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="507.6190476190475" y="255.32258064516134" as="sourcePoint"/>
+                        <mxPoint x="264.76" y="205" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" value="IS-A" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.414;exitY=-0.04;exitDx=0;exitDy=0;entryX=0.371;entryY=1.087;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="86" target="76" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="151.42857142857142" y="425.9677419354839" as="sourcePoint"/>
+                        <mxPoint x="317.3800000000001" y="205" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="69" value="IS-A" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.615;entryY=1.043;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="82" target="76" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="279.30095238095237" y="423.65290322580654" as="sourcePoint"/>
+                        <mxPoint x="422.6199999999999" y="205" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="IS-A" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.478;exitY=0.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.966;entryY=0.957;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="78" target="76" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="434.7619047619047" y="425.9677419354839" as="sourcePoint"/>
+                        <mxPoint x="470" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="77" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="530.0042857142856" y="416.9983870967742" width="145.71428571428567" height="64.58064516129036" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="DecoyDuck" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=10;container=0;" parent="77" vertex="1">
+                    <mxGeometry width="145.7142857142857" height="64.58064516129033" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="+ display: void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;container=0;" parent="77" vertex="1">
+                    <mxGeometry y="26" width="145.7142857142857" height="19.290322580645164" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="// Looks like a decoy duck" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;container=0;" parent="77" vertex="1">
+                    <mxGeometry y="45.290322580645125" width="145.7142857142857" height="19.290322580645164" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="353.80952380952374" y="416.9983870967742" width="145.71428571428567" height="66.1306451612902" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="RubberDuck" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=10;container=0;" parent="81" vertex="1">
+                    <mxGeometry width="145.7142857142857" height="64.58064516129033" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="+ display: void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;container=0;" parent="81" vertex="1">
+                    <mxGeometry y="27.549999999999955" width="145.7142857142857" height="19.290322580645164" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="// Looks like a rubber duck" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;container=0;" parent="81" vertex="1">
+                    <mxGeometry y="46.84032258064508" width="145.7142857142857" height="19.290322580645164" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="224.28571428571428" y="416.9983870967742" width="113.33333333333331" height="64.58064516129036" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="RedHeadDuck" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=10;container=0;" parent="85" vertex="1">
+                    <mxGeometry width="113.33333333333331" height="64.58064516129033" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="+ display: void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;container=0;" parent="85" vertex="1">
+                    <mxGeometry y="26" width="113.33333333333331" height="19.290322580645164" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="// Looks like a redhead" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;container=0;" parent="85" vertex="1">
+                    <mxGeometry y="45.290322580645125" width="113.33333333333331" height="19.290322580645164" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="89.99666666666666" y="416.2283870967742" width="113.33333333333331" height="66.1306451612902" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="MallardDuck" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=10;container=0;" parent="89" vertex="1">
+                    <mxGeometry width="113.33333333333331" height="64.58064516129033" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="+ display: void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;container=0;" parent="89" vertex="1">
+                    <mxGeometry y="27.549999999999955" width="113.33333333333331" height="19.290322580645164" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="// Looks like a mallard" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;container=0;" parent="89" vertex="1">
+                    <mxGeometry y="46.84032258064508" width="113.33333333333331" height="19.290322580645164" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="Duck" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="106.94" width="215.23" height="103.16096774193548" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="+ swim(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;container=0;fontSize=10;" parent="97" vertex="1">
+                    <mxGeometry y="26" width="215.23" height="19.29032258064516" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="+ fly(): void" style="text;strokeColor=#6F0000;fillColor=#a20025;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;container=0;fontSize=10;fontColor=#ffffff;" parent="97" vertex="1">
+                    <mxGeometry y="45.29032258064516" width="215.23" height="19.29" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="+ display(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;container=0;fontSize=10;" parent="97" vertex="1">
+                    <mxGeometry y="64.58032258064516" width="215.23" height="19.29032258064516" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="+ quack(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;container=0;fontSize=10;" parent="97" vertex="1">
+                    <mxGeometry y="83.87064516129033" width="215.23" height="19.29032258064516" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="Make Ducks Fly" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="66.94" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
