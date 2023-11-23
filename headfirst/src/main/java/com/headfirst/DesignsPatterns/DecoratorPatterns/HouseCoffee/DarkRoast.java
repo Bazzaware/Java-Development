@@ -10,7 +10,7 @@ public class DarkRoast extends Beverage {
 
     @Override
     public double cost() {
-        Double cost = 0.99;
+        double cost = 0.99;
         switch (this.getSize()) {
             case TALL:
                 cost += 0.10;
