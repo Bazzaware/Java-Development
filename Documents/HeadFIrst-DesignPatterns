@@ -1,22 +1,11 @@
 # Head First in Design Patterns
 
-## Design Principles
-* Identify the aspects of your application that vary and separate them from what stays the same.
-* Program to an interface, not an implementation.
+## Design Principals
+* Identify parts of the application that vary and separate them from what stays the same.
+* Program to an interface not an implementation.
+* Composition over inheritance.
 
+[Chapter One Strategy Pattern](../headfirst/Documents/DesignPatterns.md)
+**The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+Strategy lets algorithm vay independently from clients that use it.**
 
-```Java
-Public class MallardDuck extends Duck {
-    public MallardDuck(){
-        /*
-        * Still using concrete classes for Quack
-        */
-        quackBehavior = new Quack();
-        flyBehavior = new Quack();
-    }
-
-    public void display(){
-        System.out println("I'm a real Mallard duck");
-    }
-}
-```

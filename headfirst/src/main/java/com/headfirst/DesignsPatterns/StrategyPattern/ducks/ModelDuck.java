@@ -1,7 +1,7 @@
-package com.headfirst.DesignsPatterns.ChapterOne.ducks;
+package com.headfirst.DesignsPatterns.StrategyPattern.ducks;
 
-import com.headfirst.DesignsPatterns.ChapterOne.classes.*;
-import com.headfirst.DesignsPatterns.ChapterOne.interfaces.IDuck;
+import com.headfirst.DesignsPatterns.StrategyPattern.classes.*;
+import com.headfirst.DesignsPatterns.StrategyPattern.interfaces.IDuck;
 
 public class ModelDuck extends IDuck {
     public ModelDuck() {

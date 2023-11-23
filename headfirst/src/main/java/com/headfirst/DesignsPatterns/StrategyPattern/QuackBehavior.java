@@ -1,4 +1,4 @@
-package com.headfirst.DesignsPatterns.ChapterOne;
+package com.headfirst.DesignsPatterns.StrategyPattern;
 
 public interface QuackBehavior {
 
